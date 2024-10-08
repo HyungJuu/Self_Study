@@ -11,6 +11,8 @@ namespace WpfApp.ViewModels
 {
     public partial class SignInViewModel : ObservableObject
     {
+        private string _id = "admin";
+        private string _password = "1234";
         private MainViewModel _mainViewModel;
 
         public string Id { get; set; }
@@ -18,17 +20,17 @@ namespace WpfApp.ViewModels
         public string LoginMessage { get; set; }
 
         public IRelayCommand SignInCommand { get; set; }
-        public IRelayCommand SignUpCommand { get; set; }
+        //public IRelayCommand SignUpCommand { get; set; }
 
         public SignInViewModel(MainViewModel mainViewModel)
         {
             _mainViewModel = mainViewModel;
             SignInCommand = new RelayCommand(OnSignIn);
-            SignUpCommand = new RelayCommand(OnSignUp);
+            //SignUpCommand = new RelayCommand(OnSignUp);
         }
         private void OnSignIn()
         {
-            if(Id == "" && Password == "")
+            if(Id == "admin" && Password == "admin")
             { 
                 LoginMessage = "로그인성공";
                 _mainViewModel.CurrentViewModel = new MainViewModel();

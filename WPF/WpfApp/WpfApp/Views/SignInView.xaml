@@ -9,10 +9,11 @@
     <Grid>
         <StackPanel>
             <TextBox Text="{Binding Id}" 
+                     
                      Margin="10"/>
             <TextBox Text="{Binding Password}" 
                      Margin="10"/>
-            <!--<PasswordBox Password="{Binding}" 
+            <!--<PasswordBox Password="{Binding Password}" 
                          Margin="10"/>-->
             <Button Command="{Binding SignInCommand}" 
                     Content="로그인" Margin="10"/>
