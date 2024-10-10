@@ -19,7 +19,12 @@ namespace WpfApp1.ViewModels
 
         public void ShowMainView()
         {
-            CurrentViewModel = new SignInSuccessViewModel();
+            CurrentViewModel = new SignInSuccessViewModel(this);
+        }
+
+        public void ShowSignInView()
+        {
+            CurrentViewModel = new SignInViewModel(this);
         }
     }
 }

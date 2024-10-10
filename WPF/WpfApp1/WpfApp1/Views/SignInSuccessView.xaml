@@ -10,9 +10,9 @@
         <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"
                    Text="{Binding SuccessMessage}" 
                    FontSize="16"/>
-        <!--<Button Content="로그아웃" Width="80" Height="30"
+        <Button Content="로그아웃" Width="80" Height="30"
                 Command="{Binding SignOutCommand}"
                 Style="{StaticResource Button}"
-                VerticalAlignment="top" HorizontalAlignment="Right" Margin="10"/>-->
+                VerticalAlignment="top" HorizontalAlignment="Right" Margin="10"/>
     </Grid>
 </UserControl>
