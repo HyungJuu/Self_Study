@@ -7,23 +7,18 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <Border BorderBrush="Black" BorderThickness="1" Width="300" Height="150" >
-            <StackPanel Background="LightGray" Width="300" Height="150"
+        <Border BorderBrush="Black" BorderThickness="1" Background="LightGray" Width="300" Height="150" >
+            <StackPanel Width="300" Height="150"
                         HorizontalAlignment="Center" VerticalAlignment="Center" >
-                <TextBox Text="{Binding Id}"
-                         FontSize="14" Padding="10 5"
-                         Width="200" Margin="10 10 10 0" />
-                <TextBox Text="{Binding Password}"
-                         FontSize="14" Padding="10 5"
-                         Width="200" Margin="10 0 10 10"/>
+                <TextBox Text="{Binding Id}" Margin="10 10 10 0" />
+                <TextBox Text="{Binding Password}" Margin="10 0 10 10"/>
                 <Button Content="로그인"
-                        Command="{Binding SignInCommand}"
-                        Width="200" Margin="5" />
+                        Command="{Binding SignInCommand}" Margin="5"
+                        Style="{StaticResource Button}"/>
                 <TextBlock Text="{Binding LoginMessage}" 
                            HorizontalAlignment="Center"
-                           Foreground="Red"  Margin="10" />
+                           Foreground="Red"  Margin="10 5" />
             </StackPanel>
         </Border>
-        
     </Grid>
 </UserControl>
