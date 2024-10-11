@@ -33,7 +33,7 @@ namespace WpfApp1.ViewModels
 
         private void OnSignIn()
         {
-            // 임의 아이디, 비밀번호
+            // 임시 아이디, 비밀번호
             string UsertId = "admin";
             string UserPassword = "1234";
 
@@ -44,7 +44,7 @@ namespace WpfApp1.ViewModels
             else
             {
                 LoginMessage = "아이디 또는 비밀번호를 확인하세요.";
-                //MessageBox.Show("로그인 실패!\n아이디 또는 비밀번호를 확인하세요.", "오류", MessageBoxButton.OK, MessageBoxImage.Error);
+                //MessageBox.Show("아이디 또는 비밀번호를 확인하세요.", "오류", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }
