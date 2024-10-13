@@ -17,17 +17,20 @@
             <Setter Property="FontSize" Value="14" />
             <Setter Property="Padding" Value="10 5" />
             <Setter Property="Width" Value="200" />
-            <!--<Setter Property="Height" Value="30" />-->
             <Setter Property="BorderBrush" Value="Gray" />
+            
+            <!--<Setter Property="Background" Value="White" />-->
+            <!--<Setter Property="Height" Value="30" />-->
             <!--<Style.Triggers>
                 <Trigger Property="IsFocused" Value="True">
-                    <Setter Property="SelectionBrush" Value="Blue" />
+                    <Setter Property="BorderThickness" Value="2" />
+                    <Setter Property="BorderBrush" Value="Black" />
                 </Trigger>
             </Style.Triggers>-->
 
         </Style>
 
-        <Style TargetType="Button" x:Key="Button">
+        <Style TargetType="Button">
             <Setter Property="FontSize" Value="14" />
             <Setter Property="Padding" Value="5" />
             <Setter Property="Width" Value="200" />
@@ -38,7 +41,9 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                        <Border Background="{TemplateBinding Background}" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}">
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
                     </ControlTemplate>

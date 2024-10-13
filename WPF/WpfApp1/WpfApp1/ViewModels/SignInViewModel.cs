@@ -6,21 +6,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Input;
 
 namespace WpfApp1.ViewModels
 {
     public partial class SignInViewModel : ObservableObject
     {
         private MainViewModel _mainViewModel;
+        
+        [ObservableProperty]
+        private string _id = "";
 
         [ObservableProperty]
-        private string _id;
+        private string _password = "";
 
         [ObservableProperty]
-        private string _password;
-
-        [ObservableProperty]
-        private string _loginMessage;
+        private string _loginMessage = "";
 
 
         public IRelayCommand SignInCommand { get; set; }
@@ -31,6 +32,7 @@ namespace WpfApp1.ViewModels
             SignInCommand = new RelayCommand(OnSignIn);
         }
 
+        // SignInCommand 실행시(로그인 버튼 클릭 시) 메서드 호출
         private void OnSignIn()
         {
             // 임시 아이디, 비밀번호

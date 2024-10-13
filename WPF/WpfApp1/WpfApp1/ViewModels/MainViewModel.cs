@@ -17,6 +17,7 @@ namespace WpfApp1.ViewModels
             CurrentViewModel = new SignInViewModel(this);
         }
 
+        // 상황에 따라 각 메서드를 호출하여 CurrentViewModel 속성을 변경 -> 화면전환
         public void ShowMainView()
         {
             CurrentViewModel = new SignInSuccessViewModel(this);
