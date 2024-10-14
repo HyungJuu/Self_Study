@@ -46,7 +46,8 @@ namespace WpfApp1.ViewModels
             else
             {
                 LoginMessage = "아이디 또는 비밀번호를 확인하세요.";
-                //MessageBox.Show("아이디 또는 비밀번호를 확인하세요.", "오류", MessageBoxButton.OK, MessageBoxImage.Error);
+                Id = string.Empty;
+                Password = string.Empty;
             }
         }
     }

@@ -18,7 +18,7 @@
             <Setter Property="Padding" Value="10 5" />
             <Setter Property="Width" Value="200" />
             <Setter Property="BorderBrush" Value="Gray" />
-            
+
             <!--<Setter Property="Background" Value="White" />-->
             <!--<Setter Property="Height" Value="30" />-->
             <!--<Style.Triggers>
@@ -27,7 +27,6 @@
                     <Setter Property="BorderBrush" Value="Black" />
                 </Trigger>
             </Style.Triggers>-->
-
         </Style>
 
         <Style TargetType="Button">
@@ -56,5 +55,6 @@
                 </Trigger>
             </Style.Triggers>
         </Style>
+
     </Application.Resources>
 </Application>
