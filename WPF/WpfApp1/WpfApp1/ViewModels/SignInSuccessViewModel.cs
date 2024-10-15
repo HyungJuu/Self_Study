@@ -14,17 +14,17 @@ namespace WpfApp1.ViewModels
 
         public string SuccessMessage { get; } = "로그인에 성공했습니다!";
 
-        public IRelayCommand SignOutCommand { get; }
 
-        // 매개변수 : MainViewModel
         public SignInSuccessViewModel(MainViewModel mainViewModel)
         {
-            // 전달받은 객체를 필드에 할당 -> MainViewModel의 메서드,속성에 접근가능
             _mainViewModel = mainViewModel;
-            SignOutCommand = new RelayCommand(OnSignOut);
         }
 
-        // SignOutCommand가 실행될때 메서드 호출
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [RelayCommand]
         private void OnSignOut()
         {
             _mainViewModel.ShowSignInView();

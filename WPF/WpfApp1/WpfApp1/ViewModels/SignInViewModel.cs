@@ -23,16 +23,12 @@ namespace WpfApp1.ViewModels
         [ObservableProperty]
         private string _loginMessage = "";
 
-
-        public IRelayCommand SignInCommand { get; set; }
-
         public SignInViewModel(MainViewModel mainViewModel)
         {
             _mainViewModel = mainViewModel;
-            SignInCommand = new RelayCommand(OnSignIn);
         }
 
-        // SignInCommand 실행시(로그인 버튼 클릭 시) 메서드 호출
+        [RelayCommand]
         private void OnSignIn()
         {
             // 임시 아이디, 비밀번호
